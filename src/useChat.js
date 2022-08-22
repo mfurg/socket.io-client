@@ -3,7 +3,7 @@ import socketIOClient from "socket.io-client";
 import { UserState } from "./context/Context";
 
 const NEW_CHAT_MESSAGE_EVENT = "newChatMessage";
-const SOCKET_SERVER_URL = "http://localhost:8080";
+const SOCKET_SERVER_URL = "https://socket-io-mfurg.herokuapp.com/";
 
 const useChat = (roomId) => {
   const [messages, setMessages] = useState([]);
